@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class AddUpNumbers {
     public static void main(String[] args) {
         System.out.println(addUp(7));
