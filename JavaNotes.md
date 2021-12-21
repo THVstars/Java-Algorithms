@@ -62,3 +62,19 @@ Notes:
 -A class is a template for objects.
 -An object is an instance of a class.
 -When individual objects are created, they inherit all the variables and methods contained in their class.
+
+--------------------------------------------------------------------------------------------------
+
+Java Research Paper:
+
+What is the history of Java? Why and how is it used in the world?
+
+When it was first created, Java was intended to be used in interactive television. However, the technology proved too advanced for the television industry to adopt it and put it to use. It later became the perfect programming to be used for internet programming instead.
+
+What type of programming is Java, and how does that affect its use and utility?
+
+Java is a type of object-oriented programming. It places the focus on the objects created through code instead of on the processes used to create the objects. Objects are created as parts of classes. Each object can only have one class, and inherits all the variables and methods within the class it belongs to. However, classes can have multiple objects. This helps avoid repetition in code, since the same code used within one class can help create many objects.
+
+How does JavaScript compare and contrast?
+
+JavaScript can use object-oriented programming, but is not inherently an OOP language like Java. Because there are no classes in JavaScript, it’s harder to avoid repetitive code.
