@@ -1,7 +1,7 @@
 public class Recursion {
     public static void main(String[] args) {
         /* Define recursion:
-            Breaking down complicated code into simpler, easier to understand code.
+            Breaking down complicated code into simpler, easier to understand code. Method must call itself.
         */
 
         countDown(10);
@@ -9,6 +9,8 @@ public class Recursion {
         countWhile(10);
         System.out.println("");
         System.out.println(sum(10));
+        System.out.println("");
+        System.out.println(factorial(5));
 
     }
 
@@ -19,9 +21,10 @@ public class Recursion {
     }
 
     public static void countWhile(int number) {
-        while(number >= 0) { // recursion???
+        while(number > -1) { // Recursion??? Must call method/function within itself.
             System.out.println(number);
-            number -= 1;
+            countWhile(number-1);
+            break;
         }
     }
 
@@ -29,5 +32,11 @@ public class Recursion {
         if (n>0) {
             return n + sum(n-1);
         } return n;
+    }
+
+    public static int factorial(int num) {
+        while (num > 1) {
+            return num * factorial(num-1);
+        } return 1; // No break needed because I'm not printing anything within the method / there's a return. Putting a different number here changes the result! 1 = 120, 10 = 1200.
     }
 }
