@@ -11,6 +11,8 @@ public class Recursion {
         System.out.println(sum(10));
         System.out.println("");
         System.out.println(factorial(5));
+        System.out.println("");
+        System.out.println(fibonacci(10));
 
     }
 
@@ -38,5 +40,15 @@ public class Recursion {
         while (num > 1) {
             return num * factorial(num-1);
         } return 1; // No break needed because I'm not printing anything within the method / there's a return. Putting a different number here changes the result! 1 = 120, 10 = 1200.
+    }
+
+    public static int fibonacci(int n) {
+        if (n==0) {
+            return 0;
+        } else if (n == 1 || n == 2) {
+            return 1;
+        } else {
+            return fibonacci(n-2) + fibonacci(n-1);
+        }
     }
 }
