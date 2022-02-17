@@ -13,6 +13,8 @@ public class Recursion {
         System.out.println(factorial(5));
         System.out.println("");
         System.out.println(fibonacci(10));
+        System.out.println("");
+        System.out.println(addUp(10));
 
     }
 
@@ -50,5 +52,11 @@ public class Recursion {
         } else {
             return fibonacci(n-2) + fibonacci(n-1);
         }
+    }
+
+    public static int addUp(int num) {
+        if (num > 0) {
+            return num + addUp(num - 1);
+        } return num;
     }
 }
